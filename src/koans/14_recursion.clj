@@ -25,7 +25,7 @@
 (defn factorial [n]
   (loop [n n
          res 1]
-    (if (<= n 2)
+    (if (= n 0)
       res
       (recur (dec n) (* n res)))))
 
